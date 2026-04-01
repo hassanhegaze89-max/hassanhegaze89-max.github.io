@@ -3,86 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hassan Hegaze | Translator</title>
+<title>Hassan Hegaze | Arabic Translator</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #020617, #0f172a);
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg,#020617,#0f172a);
   color: white;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1100px;
   margin: auto;
   padding: 60px 20px;
+}
+
+.hero {
   text-align: center;
 }
 
-h1 {
-  font-size: 42px;
+.hero h1 {
+  font-size: 48px;
 }
 
 .highlight {
   color: #22c55e;
 }
 
-p {
+.hero p {
+  font-size: 20px;
   opacity: 0.8;
 }
 
 .btn {
-  display: inline-block;
+  padding: 14px 24px;
   margin: 10px;
-  padding: 14px 22px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
+  display: inline-block;
 }
 
-.btn-primary {
+.primary {
   background: #22c55e;
   color: black;
 }
 
-.btn-secondary {
+.secondary {
   border: 1px solid #22c55e;
   color: #22c55e;
-}
-
-.btn-whatsapp {
-  background: #25D366;
-  color: black;
-}
-
-.btn:hover {
-  transform: scale(1.05);
 }
 
 .section {
   margin-top: 80px;
 }
 
-.card {
-  background: rgba(255,255,255,0.05);
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
 }
 
-.floating {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: none;
 }
 
 .footer {
-  margin-top: 80px;
-  opacity: 0.6;
+  text-align: center;
+  margin-top: 60px;
+  opacity: 0.5;
 }
 </style>
 </head>
@@ -91,40 +99,44 @@ p {
 
 <div class="container">
 
-<h1>
-I Turn Your Content Into <span class="highlight">Perfect Arabic</span> That Converts
-</h1>
+<!-- HERO -->
+<div class="hero">
+<h1>I Turn Your Content Into <span class="highlight">High-Converting Arabic</span></h1>
 
-<p>Professional Arabic ↔ English Translator</p>
+<p>I help businesses translate and localize content with accuracy, clarity, and cultural impact.</p>
 
-<!-- 🔥 UPDATED BUTTON -->
-<a class="btn btn-primary" href="https://www.upwork.com/freelancers/~01983fdfaca07da39c" target="_blank">
-Hire Me on Upwork
-</a>
+<a class="btn primary" href="https://www.upwork.com/freelancers/~01983fdfaca07da39c" target="_blank">Hire Me on Upwork</a>
 
-<a class="btn btn-secondary" href="cv.pdf" download>Download CV</a>
+<a class="btn secondary" href="https://wa.me/201113524233" target="_blank">Chat on WhatsApp</a>
+</div>
 
-<a class="btn btn-whatsapp" href="https://wa.me/201113524233" target="_blank">
-WhatsApp Me
-</a>
-
+<!-- FEATURES -->
 <div class="section">
-<h2>Why Clients Choose Me</h2>
+<h2>Why Work With Me</h2>
+
+<div class="grid">
 <div class="card">✔ 5+ Years Experience</div>
 <div class="card">✔ 500,000+ Words Translated</div>
 <div class="card">✔ 99% Accuracy</div>
-<div class="card">✔ Fast Delivery (24–48h)</div>
+<div class="card">✔ Fast Delivery</div>
+</div>
 </div>
 
+<!-- SERVICES -->
 <div class="section">
-<h2>Portfolio</h2>
-<div class="card"><b>Technical Translation</b><br>Cybersecurity article (1500+ words)</div>
-<div class="card"><b>Legal Translation</b><br>Professional contract translation</div>
-<div class="card"><b>Website Localization</b><br>Full website adaptation to Arabic</div>
+<h2>Services</h2>
+
+<div class="grid">
+<div class="card">Technical Translation</div>
+<div class="card">Legal Translation</div>
+<div class="card">Website Localization</div>
+</div>
 </div>
 
+<!-- SAMPLE -->
 <div class="section">
 <h2>Before / After</h2>
+
 <div class="card">
 <b>Original:</b><br>
 This agreement is binding under the following conditions...
@@ -134,14 +146,17 @@ This agreement is binding under the following conditions...
 </div>
 </div>
 
+<!-- FORM -->
 <div class="section">
-<h2>Contact</h2>
-<div class="card">
-📧 Hassanhegaze89@gmail.com<br><br>
-📱 01113524233<br>
-📱 01031246430<br><br>
-💼 Upwork: https://www.upwork.com/freelancers/~01983fdfaca07da39c
-</div>
+<h2>Start Your Project</h2>
+
+<form action="https://formspree.io/f/mayvlqzr" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Describe your project..." required></textarea>
+<button class="btn primary" type="submit">Send Request</button>
+</form>
+
 </div>
 
 <div class="footer">
@@ -149,10 +164,6 @@ This agreement is binding under the following conditions...
 </div>
 
 </div>
-
-<a class="btn btn-whatsapp floating" href="https://wa.me/201113524233" target="_blank">
-💬 Chat
-</a>
 
 </body>
 </html>
