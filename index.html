@@ -32,13 +32,9 @@ nav a {
 }
 
 .hero img {
-  width: 140px;
+  width: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
-}
-
-.hero h2 {
-  margin: 10px 0;
 }
 
 .hero button {
@@ -56,6 +52,14 @@ section {
   text-align: center;
 }
 
+.skills span {
+  display: inline-block;
+  background: #1e293b;
+  margin: 5px;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -67,7 +71,7 @@ section {
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
-  width: 250px;
+  width: 260px;
 }
 
 .card a {
@@ -81,7 +85,6 @@ footer {
   text-align: center;
   padding: 20px;
   background: #020617;
-  margin-top: 30px;
 }
 </style>
 
@@ -93,30 +96,53 @@ footer {
   <nav>
     <a href="#">Home</a>
     <a href="#about">About</a>
+    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
-  <!-- غير اللينك ده بصورتك -->
-  <img src="https://via.placeholder.com/150" alt="Profile Picture">
+
+  <!-- ارفع الصورة بنفس الاسم -->
+  <img src="me.png" alt="Hassan">
 
   <h2>Hello, I'm Hassan 👋</h2>
-  <p>Arabic → English Translator | Frontend Developer</p>
 
-  <!-- زرار تواصل -->
+  <p>
+    Professional Translator | Frontend Developer | AI & Automation Enthusiast
+  </p>
+
   <button onclick="window.location.href='mailto:hassanhegaze89@gmail.com'">Hire Me</button>
-
-  <!-- زرار تحميل CV -->
   <button onclick="window.location.href='cv.pdf'">Download CV</button>
+
 </section>
 
 <section id="about">
   <h2>About Me</h2>
+
   <p>
-    I provide clear, natural Arabic to English translation and build simple, clean websites.
+    I am a professional multilingual translator and proofreader with over 10 years of experience delivering high-quality translations across Arabic, English, French, Portuguese, and Spanish.
+    <br><br>
+    I specialize in accurate, culturally adapted content and technical translation. Alongside my linguistic expertise, I build modern web interfaces and explore AI automation and DevOps to create efficient digital solutions.
   </p>
+
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Translation</span>
+    <span>GitHub</span>
+    <span>AI Automation</span>
+    <span>DevOps Basics</span>
+    <span>Cybersecurity</span>
+  </div>
+
 </section>
 
 <section id="projects">
@@ -125,29 +151,38 @@ footer {
   <div class="projects">
 
     <div class="card">
-      <h3>Translation Sample</h3>
-      <p>Professional Arabic to English translation sample.</p>
-      <a href="#">View</a>
+      <h3>Translation Portfolio</h3>
+      <p>Professional multilingual translation work.</p>
+      <a href="https://www.linkedin.com/in/hassan-mohamed-8114962b5/" target="_blank">View</a>
     </div>
 
     <div class="card">
-      <h3>Portfolio Website</h3>
-      <p>My personal website built using HTML & CSS.</p>
-      <a href="#">Live Demo</a>
+      <h3>Personal Website</h3>
+      <p>Portfolio built using HTML & CSS.</p>
+      <a href="https://github.com/hassanhegaze89-max" target="_blank">GitHub</a>
     </div>
 
     <div class="card">
       <h3>Coming Soon</h3>
       <p>More projects will be added soon.</p>
-      <a href="#">GitHub</a>
+      <a href="#">Soon</a>
     </div>
 
   </div>
+
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
+
   <p>Email: hassanhegaze89@gmail.com</p>
+  <p>Phone / WhatsApp: +201113524233</p>
+
+  <p>
+    <a href="https://github.com/hassanhegaze89-max" target="_blank">GitHub</a> |
+    <a href="https://www.linkedin.com/in/hassan-mohamed-8114962b5/" target="_blank">LinkedIn</a>
+  </p>
+
 </section>
 
 <footer>
